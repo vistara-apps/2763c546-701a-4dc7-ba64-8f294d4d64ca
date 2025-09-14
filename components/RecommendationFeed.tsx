@@ -8,8 +8,8 @@ import { SAMPLE_PRODUCTS, SAMPLE_BRANDS } from '@/lib/constants';
 import type { Product, Brand } from '@/lib/types';
 
 export function RecommendationFeed() {
-  const [products] = useState<Product[]>(SAMPLE_PRODUCTS);
-  const [brands] = useState<Brand[]>(SAMPLE_BRANDS);
+  const [products] = useState<Product[]>([...SAMPLE_PRODUCTS]);
+  const [brands] = useState<Brand[]>([...SAMPLE_BRANDS]);
   const [currentAudio, setCurrentAudio] = useState<string | null>(null);
 
   const handleLike = (productId: string) => {
@@ -75,7 +75,6 @@ export function RecommendationFeed() {
             onLike={handleLike}
             onShare={handleShare}
             className="animate-slide-up"
-            style={{ animationDelay: `${index * 100}ms` } as React.CSSProperties}
           />
         ))}
       </div>

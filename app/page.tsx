@@ -1,6 +1,10 @@
+'use client';
+
 import { AppShell } from '@/components/AppShell';
 import { ChatInterface } from '@/components/ChatInterface';
 import { RecommendationFeed } from '@/components/RecommendationFeed';
+
+export const dynamic = 'force-dynamic';
 
 export default function HomePage() {
   return (
