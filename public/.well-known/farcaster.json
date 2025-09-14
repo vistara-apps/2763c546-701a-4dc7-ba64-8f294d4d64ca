@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "AuraListen",
+    "subtitle": "Built with Zara",
+    "description": "AuraListen is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://2763c546701a4dc7ba648f294d4d64ca-3znu.vercel.app",
+    "splashImageUrl": "https://2763c546701a4dc7ba648f294d4d64ca-3znu.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://2763c546701a4dc7ba648f294d4d64ca-3znu.vercel.app/image.png",
+    "tagline": "AuraListen",
+    "screenshotUrls": [
+      "https://2763c546701a4dc7ba648f294d4d64ca-3znu.vercel.app/screenshot.png",
+      "https://2763c546701a4dc7ba648f294d4d64ca-3znu.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://2763c546701a4dc7ba648f294d4d64ca-3znu.vercel.app/api/webhook"
+  }
+}

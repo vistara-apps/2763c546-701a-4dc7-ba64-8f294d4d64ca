@@ -1,0 +1,14 @@
+{
+  "name": "AuraListen",
+  "description": "AuraListen is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://2763c546-701a-4dc7-ba64-8f294d4d64ca.vercel.app",
+  "properties": {
+    "app": {
+      "name": "AuraListen",
+      "description": "AuraListen is a Base Mini App built with Zara.",
+      "url": "https://2763c546-701a-4dc7-ba64-8f294d4d64ca.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
