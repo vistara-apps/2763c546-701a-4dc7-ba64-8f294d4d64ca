@@ -3,11 +3,17 @@ import { OpenAI } from 'openai';
 import { SAMPLE_PRODUCTS } from '@/lib/constants';
 import type { RecommendationRequest, RecommendationResponse } from '@/lib/types';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  baseURL: "https://openrouter.ai/api/v1",
-  dangerouslyAllowBrowser: true,
-});
+const getOpenAIClient = () => {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    throw new Error('OPENAI_API_KEY environment variable is required');
+  }
+  return new OpenAI({
+    apiKey,
+    baseURL: "https://openrouter.ai/api/v1",
+    dangerouslyAllowBrowser: true,
+  });
+};
 
 export async function POST(request: NextRequest) {
   try {
@@ -22,6 +28,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate AI-powered recommendations
+    const openai = getOpenAIClient();
     const completion = await openai.chat.completions.create({
       model: 'google/gemini-2.0-flash-001',
       messages: [
